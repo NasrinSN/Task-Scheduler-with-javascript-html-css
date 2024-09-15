@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Scheduler</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <h1>Task Scheduler</h1>
+    </header>
+    <main>
+        <section id="task-form">
+            <!-- Form for creating tasks -->
+            <form id="create-task">
+                <label for="task-name">Task Name:</label>
+                <input type="text" id="task-name" required>
+
+                <label for="category">Category:</label>
+                <select id="category">
+                    <option value="Arrays">Arrays</option>
+                    <option value="Strings">Strings</option>
+                    <option value="Graphs">Graphs</option>
+                </select>
+
+                <label for="difficulty">Difficulty:</label>
+                <select id="difficulty">
+                    <option value="Easy">Easy</option>
+                    <option value="Medium">Medium</option>
+                    <option value="Hard">Hard</option>
+                </select>
+
+                <label for="due-date">Due Date:</label>
+                <input type="date" id="due-date" required>
+
+                <label for="problem-link">Problem Link:</label>
+                <input type="url" id="problem-link">
+
+                <button type="submit">Add Task</button>
+            </form>
+
+        </section>
+        <section id="task-list">
+            <!-- Task list will be displayed here -->
+        </section>
+        <section id="dashboard">
+            <!-- Dashboard for progress tracking -->
+        </section>
+    </main>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
